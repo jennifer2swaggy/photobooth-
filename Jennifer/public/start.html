@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pick a Frame</title>
+  </head>
+  <body>
+    <h1>Select a frame</h1>
+    <style>
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-family: sans-serif;
+        background: #f1ead8;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 1rem 0 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem;
+      }
+      li {
+        width: min(100%, 320px);
+        max-width: 360px;
+      }
+      a {
+        display: block;
+        text-decoration: none;
+        color: inherit;
+        transition: transform 0.2s ease;
+      }
+      a img {
+        max-width: 320px;
+        width: 100%;
+        border: 1px solid #ccc;
+        display: block;
+        transition:
+          border-color 0.2s ease,
+          box-shadow 0.2s ease;
+      }
+      a:hover,
+      a:focus-visible {
+        transform: translateY(-6px);
+      }
+      a:hover img,
+      a:focus-visible img {
+        border-color: #white;
+        box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
+      }
+      .link-label {
+        margin-top: 0.5rem;
+        display: block;
+        font-family: inherit;
+      }
+    </style>
+    <ul>
+      <li>
+        <a href="/public/Green/captureGreenFrame.html">
+          <img
+            src="/public/assets/frames/greenFrame2.png"
+            alt="Green Frame preview"
+          />
+          <span class="link-label">GreenFrame</span>
+        </a>
+      </li>
+      <li>
+        <a href="/public/Button/captureButtonFrame.html">
+          <img
+            src="/public/assets/frames/buttonFrame2.png"
+            alt="Button Frame preview"
+          />
+          <span class="link-label">ButtonFrame</span>
+        </a>
+      </li>
+      <li>
+        <a href="/public/Blue/captureBlueFrame.html">
+          <img
+            src="/public/assets/frames/blueFrame3.png"
+            alt="Blue Frame preview"
+          />
+          <span class="link-label">BlueFrame</span>
+        </a>
+      </li>
+      <li>
+        <a href="/public/Yellow/captureYellowFrame.html">
+          <img
+            src="/public/assets/frames/yellowFrame3.png"
+            alt="Yellow Frame preview"
+          />
+          <span class="link-label">YellowFrame</span>
+        </a>
+      </li>
+    </ul>
+  </body>
+</html>

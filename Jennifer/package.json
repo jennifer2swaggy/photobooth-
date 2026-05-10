@@ -1,0 +1,16 @@
+{
+  "name": "photo-frame-uploader",
+  "version": "1.0.0",
+  "description": "Upload captured photos to remote server",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "ssh2": "^1.14.0",
+    "dotenv": "^16.3.1"
+  }
+}
